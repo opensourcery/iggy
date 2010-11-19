@@ -1,0 +1,393 @@
+@primary: #006225;
+@secondary: #eee8c5;
+@comp1: #eee8c5;
+@comp2: #CC6600;
+@highlight: #eef4e2;
+@attention: #efffca;
+@primary-muted: #d9e8df;
+@secondary-muted: #f5f5de;
+
+
+.rounded_corners (@radius: 6px) {
+  -moz-border-radius: @radius;
+  -webkit-border-radius: @radius;
+  border-radius: @radius;
+}
+
+
+#page-wrapper {
+	border-color: @secondary;
+}
+
+
+#site-name a:link span,
+#site-name a:visited span {
+  color: @primary;
+}
+
+/* PRIMARY NAVIGATION */
+
+#navigation {
+  background: @primary url('../assets/images/navBG.png') center left repeat-x;
+}
+
+#navigation ul#main-menu li a:link,
+#navigation ul#main-menu li a:visited {
+  color: @primary;
+  .rounded_corners;
+}
+
+#navigation ul#main-menu li a:hover,
+#navigation ul#main-menu li a:focus {
+	color: @comp2;
+}
+
+/* SECONDARY NAVIGATION */
+
+#secondary-menu li a:link,
+#secondary-menu li a:visited {
+  background: @primary-muted;
+  color: @comp2;
+  .rounded_corners;
+  border: 1px solid #f3f3f3;
+}
+
+#secondary-menu li a:hover,
+#secondary-menu li a:focus {
+  background: @comp2;
+  color: @highlight;
+  border: 1px solid #d2d2d2;
+}
+
+a:link,
+a:visited {
+  color: @comp2;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: @primary;
+}
+
+h1, h2, h3,
+h1.title {
+  color: @comp2;
+}
+
+.block {
+  background: @comp1;
+  border: 2px solid @secondary;
+  .rounded_corners;
+}
+
+.block.even {
+	background: @primary-muted;
+}
+
+.sidebar .block h2.title {
+  background: @primary;
+  color: @highlight;
+  .rounded_corners;
+}
+
+/* SITE MESSAGES */
+
+#block-boxes-volunteer_rally_site_message {
+  background: @attention;
+}
+
+#block-boxes-volunteer_rally_site_message li.edit a:link,
+#block-boxes-volunteer_rally_site_message li.edit a:visited,
+#block-boxes-volunteer_rally_site_message li.cancel a:link,
+#block-boxes-volunteer_rally_site_message li.cancel a:visited {
+  background: @primary;
+  color: @highlight;
+  .rounded_corners;
+}
+
+#block-boxes-volunteer_rally_site_message li.edit a:hover,
+#block-boxes-volunteer_rally_site_message li.edit a:focus,
+#block-boxes-volunteer_rally_site_message li.cancel a:hover,
+#block-boxes-volunteer_rally_site_message li.cancel a:focus {
+  background: @comp2;
+}
+
+/* SHIFT CONFIRMATION */
+
+a.sffb-signup-link,
+a.sffb-signup-link-question,
+a.sffb-signup-link-another { 
+  background: @primary;
+  color: @highlight;
+  .rounded_corners;
+}
+
+a.sffb-signup-link:hover, a.sffb-signup-link:focus,
+a.sffb-signup-link-question:hover, a.sffb-signup-link-question:focus
+a.sffb-signup-link-another:hover, a.sffb-signup-link-question:focus {
+  background: @comp2;
+}
+
+/* ADMIN */
+
+.modalframe {
+  background: @primary;
+}
+
+.modalframe .ui-dialog-titlebar {
+  background: @primary;
+  color: @highlight;
+}
+
+.view-group-data-blocks .views-field-edit-node a,
+.view-group-data-blocks .views-field-edit-node a:visited {
+  background: @primary;
+  color: @highlight;
+  .rounded_corners;
+}
+
+.view-group-data-blocks .views-field-edit-node a:hover,
+.view-group-data-blocks .views-field-edit-node a:focus {
+  background: @comp2;
+}
+
+/* CALENDAR STYLING */
+
+.calendar-calendar ul.links {
+  background: @light;
+  .rounded_corners;
+}
+
+.calendar-calendar ul.links li a:link,
+.calendar-calendar ul.links li a:visited {
+  color: @primary
+}
+
+.calendar-calendar ul.links li a:hover,
+.calendar-calendar ul.links li a:hover {
+  color: @comp2;
+}
+
+.calendar-calendar ul.links li.4 a:link,
+.calendar-calendar ul.links li.4 a:visited {
+	background: @primary;
+	color: @comp2;
+}
+
+.calendar-calendar ul.links li.4 a:focus,
+.calendar-calendar ul.links li.4 a:hover {
+  backround: @comp2;
+}
+
+.calendar-calendar td.today .inner div.day a,
+.calendar-calendar td.today .inner div.day a:visited {
+  color: @highlight;
+}
+
+.calendar-calendar td .inner div.day a,
+.calendar-calendar td .inner div.day a:visited {
+  color: @comp2;
+}
+
+.calendar-calendar th.days,
+.calendar-calendar th.calendar-dayview-hour,
+.calendar-calendar th.calendar-agenda-items {
+  background: @secondary;
+  color: @primary; 
+}
+
+.calendar-calendar th.calendar-agenda-hour {
+  background: @primary;
+}
+
+.calendar-calendar td.empty {
+  background: @primary-muted url('../assets/images/empty.png') top left repeat;
+}
+
+.calendar-calendar div.date-nav div.date-prev span.next a:link, 
+.calendar-calendar div.date-nav div.date-prev span.next a:visited, 
+.calendar-calendar div.date-nav div.date-next span.next a:link, 
+.calendar-calendar div.date-nav div.date-next span.next a:visited {
+  background: @primary;
+  .rounded_corners;
+}
+
+.calendar-calendar div.date-nav div.date-prev span.next a:hover,
+.calendar-calendar div.date-nav div.date-prev span.next a:focus,
+.calendar-calendar div.date-nav div.date-next span.next a:hover,
+.calendar-calendar div.date-nav div.date-next span.next a:focus {
+  background: @comp2;
+}
+
+
+.calendar-calendar tr td.today, 
+.calendar-calendar tr.odd td.today, 
+.calendar-calendar tr.even td.today {
+  background: @highlight;
+}
+
+
+.calendar-calendar td.today .inner .month.day a:link,
+.calendar-calendar td.today .inner .month.day a:visited {
+  color: @comp2;
+}
+
+
+.calendar-calendar td div.inner .calendar .view-item-shift_calendar.view-item {
+  .rounded_corners;
+}
+
+/*
+.calendar-calendar td .inner div.view-item div.calendar div {
+  .rounded_corners;                       
+}
+*/
+
+.calendar-calendar td .inner div.view-item-odd,
+.calendar-calendar td .inner div.view-item-even  {
+  background: @secondary-muted url('../assets/images/empty.png') top left repeat;
+}
+
+.calendar-calendar td .inner div.view-item-odd div.calendar div, 
+.calendar-calendar td .inner div.view-item-odd div.calendar div a {
+  background: @primary;
+  color: @highlight;
+}
+
+.calendar-calendar td .inner div.view-item-even div.calendar div, 
+.calendar-calendar td .inner div.view-item-even div.calendar div a {
+  background: @comp2;
+  color: @highlight;
+}
+
+/* CALENDAR YEAR VIEW */
+
+.calendar-calendar .month-view .date-heading h3 a:link,
+.calendar-calendar .month-view .date-heading h3 a:visited {
+  color: @primary;
+}
+
+.calendar-calendar .month-view .date-heading h3 a:hover,
+.calendar-calendar .month-view .date-heading h3 a:focus {
+  color: @comp2;
+}
+
+/* SHIFT DETAILS POPUP */
+
+#calpopup h2.title a:link,
+#calpopup h2.title a:visited {
+  color: @comp2;
+}
+
+#calpopup h2.title a:hover,
+#calpopup h2.title a:focus {
+  color: @primary;
+}
+
+.node-type-shift li.signup_field_signup_shift a:link,
+.node-type-shift li.signup_field_signup_shift a:visited,
+#calpopup li.signup_field_signup_shift a:link,
+#calpopup li.signup_field_signup_shift a:visited {
+  background: @primary;
+  color: @secondary;
+  .rounded_corners;
+}
+
+.node-type-shift li.signup_field_signup_shift a:hover,
+.node-type-shift li.signup_field_signup_shift a:focus,
+#calpopup li.signup_field_signup_shift a:hover,
+#calpopup li.signup_field_signup_shift a:focus {
+  background: @comp2;
+}
+
+.calendar-calendar span.remaining-capacity {
+  color: @highlight;
+}
+
+#calpopup .volunteer-rally-remaining-capacity span.remaining-capacity {
+  color: @primary;
+}
+
+.calendar-calendar .volunteer-rally-shift-capacity span.remaining-capacity.remaining-capacity-0,
+#calpopup .volunteer-rally-remaining-capacity span.remaining-capacity-0 {
+  color: @comp2;
+}
+
+/* 
+My Shifts
+*/
+
+.view-my-shift-signups .views-row {
+  .rounded_corners;
+}
+
+.view-my-shift-signups tr.odd,
+.view-my-shift-signups .views-row-odd {
+	background: #FFF;
+}
+
+.view-my-shift-signups tr.even,
+.view-my-shift-signups .views-row-even {
+	background: @highlight;
+}
+
+.view-my-shift-signups .more-link a:link,
+.view-my-shift-signups .more-link a:visited {
+  background: @primary;
+  color: @highlight;
+  .rounded_corners;
+}
+
+.view-my-shift-signups .more-link a:hover,
+.view-my-shift-signups .more-link a:focus {
+  background: @comp2;
+}
+
+form#node-delete-confirm a:link {
+  background: @primary-muted;
+  color: #FFF;
+}
+
+form#node-delete-confirm a:focus,
+form#node-delete-confirm a:hover {
+  background: @secondary-muted;
+}
+
+/*
+FOOTER
+*/
+
+#footer {
+  background: @comp1;
+}
+
+input[type="submit"], button {
+  background-color: @primary;
+  color: @highlight;
+  .rounded_corners;
+}
+
+input[type=submit]:hover,
+input[type=submit]:focus,
+button:hover, button:focus {
+  background-color: @comp2;
+}
+
+/*
+LOGIN/REGISTER
+*/
+.login a:link, 
+.login a:visited, 
+.register a:link, 
+.register a:visited {
+  background: @primary;
+  .rounded_corners;
+}
+
+.login a:focus, 
+.login a:hover, 
+.register a:focus, 
+.register a:hover {
+  background: @comp2;
+}

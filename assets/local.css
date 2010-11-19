@@ -1,0 +1,181 @@
+body {
+	background: url('../assets/images/bodyBG.gif') top left repeat;
+}
+
+#page-wrapper {
+	background: #FFF;
+}
+
+#site-name {
+	/*text-indent: -2000px;*/
+	position: relative;
+	top: 55px;
+	text-transform: uppercase;
+}
+
+#header {
+	height: 125px;
+	padding-left: 10px;
+}
+
+
+.item-list {
+	clear: left;
+}
+
+.item-list ul,
+.item-list ul li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+/*****************************
+	    BREADCRUMBS
+*****************************/
+
+.breadcrumb {
+	margin-bottom:10px;
+}
+
+.breadcrumb a:link,
+.breadcrumb a:visited {
+	text-decoration: none;
+}
+
+
+/*****************************
+	    PRIMARY NAVIGATION
+*****************************/
+#navigation {
+	height: 50px;
+}
+
+#navigation ul#main-menu {
+	background: transparent;
+}
+
+#navigation ul#main-menu li {
+	margin: 0;
+	padding: 10px 0;
+	border-right: 1px solid #d9e8df;
+}
+
+#navigation ul#main-menu li.first {
+	border-right: 1px solid #d9e8df;
+}
+
+#navigation ul#main-menu li.last {
+
+}
+
+#navigation ul#main-menu li a:link,
+#navigation ul#main-menu li a:visited {
+	display: block;
+	text-transform: uppercase;
+	font-weight: bold;
+	background: transparent;
+	text-decoration: none;
+	padding: 8px 15px 5px 15px;
+	font-size: 1.2em;
+}
+
+
+
+
+/*****************************
+	    CALENDAR STYLING
+*****************************/
+
+.calendar-calendar div.date-nav {
+	background: #FFF;
+	border: none;
+	padding: 8px 5px;
+	clear: both;
+}
+
+.calendar-calendar div.date-nav div.date-prev span.next a:link,
+.calendar-calendar div.date-nav div.date-prev span.next a:visited,
+.calendar-calendar div.date-nav div.date-next span.next a:link,
+.calendar-calendar div.date-nav div.date-next span.next a:visited {
+	color: #FFF;
+	padding: 3px 10px;
+	text-decoration: none;
+}
+
+.calendar-calendar div.date-nav div.date-prev span.next a:hover,
+.calendar-calendar div.date-nav div.date-prev span.next a:focus,
+.calendar-calendar div.date-nav div.date-next span.next a:hover,
+.calendar-calendar div.date-nav div.date-next span.next a:focus {
+	color: #FFF;
+}
+
+.calendar-calendar div.date-nav div.date-heading h3 {
+	color: #006225;
+}
+
+.calendar-calendar ul.links {
+	overflow: hidden;
+	padding: 5px 3px;
+	margin: 0;
+	border-bottom: 1px solid #cccccc;
+	border-left: 1px solid #dddddd;
+	border-right: 1px solid #dddddd;
+	border-top: 1px solid #dddddd;
+	background: #f3f3f3;
+}
+
+.calendar-calendar ul.links li {
+	padding: 0 0;
+}
+
+.calendar-calendar ul.links li a:link,
+.calendar-calendar ul.links li a:visited {
+	text-decoration: none;
+	padding: 3px 6px;
+	border: 1px solid #f3f3f3;
+	-webkit-border-radius: 6px;
+	-khtml-border-radius: 6px;	
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	background: #FFF;
+}
+
+.calendar-calendar ul.links li a:focus,
+.calendar-calendar ul.links li a:hover {
+	border: 1px solid #d2d2d2;
+}
+
+.calendar-calendar ul.links li.last a:link,
+.calendar-calendar ul.links li.last a:visited {
+	
+}
+
+.calendar-calendar th.days {
+	padding: 5px 0;
+}
+
+.calendar-calendar th {
+	padding: 5px 0;
+}
+
+.calendar-calendar td.empty {
+	
+}
+
+
+.login a:link, 
+.login a:visited, 
+.register a:link, 
+.register a:visited {
+	color: #FFF;
+	padding: 3px 10px;
+	text-decoration: none;
+}
+
+.login a:focus, 
+.login a:hover, 
+.register a:focus, 
+.register a:hover {
+        color: #FFF;
+}
