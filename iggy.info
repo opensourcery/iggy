@@ -6,7 +6,7 @@ screenshot = screenshot.png
 core       = 6.x
 base theme = doune
 
-stylesheets[all][]   = css/vm.css
+stylesheets[all][]   = css/vr.less
 stylesheets[all][]   = assets/local.css
 stylesheets[all][]   = assets/branding.less
 
