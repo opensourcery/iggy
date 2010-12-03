@@ -31,7 +31,7 @@ features[] = favicon
 features[] = primary_links
 features[] = secondary_links
 
-settings[zen_block_editing]        = 1
+settings[zen_block_editing]        = 0
 settings[zen_breadcrumb]           = yes
 settings[zen_breadcrumb_separator] = ' › '
 settings[zen_breadcrumb_home]      = 1
