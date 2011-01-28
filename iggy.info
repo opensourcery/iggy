@@ -2,13 +2,15 @@
 name        = Iggy
 description = The default Volunteer Rally theme
 
-screenshot = screenshot.png
+screenshot = iggy.png
 core       = 6.x
 base theme = doune
 
-stylesheets[all][]   = css/vr.less
-stylesheets[all][]   = assets/local.css
-stylesheets[all][]   = assets/branding.less
+stylesheets[all][]      = css/screen.css
+stylesheets[all][]      = css/layout.css
+stylesheets[print][]    = css/print.css
+
+conditional-stylesheets[if IE][all][] = css/ie.css
 
 regions[sidebar_first]  = First sidebar
 regions[sidebar_second] = Second sidebar
