@@ -44,6 +44,10 @@ features[] = favicon
 features[] = primary_links
 features[] = secondary_links
 
+designkit[color][background][title] = "Background"
+designkit[color][background][description] = "Primary theme color, used for headers, and other fills."
+designkit[color][background][default] = "#44aa55"
+
 settings[zen_block_editing]        = 0
 settings[zen_breadcrumb]           = yes
 settings[zen_breadcrumb_separator] = ' › '
