@@ -16,31 +16,6 @@ function iggy_theme(&$existing, $type, $theme, $path) {
 }
 
 /**
- * In the context of the way action center is using events, the All
- * day appended to dates never makes sense. Here an empty string is
- * returned.
- */
-function iggy_date_all_day_label() {
-  return '';
-}
-
-/**
- * Override or insert variables into the block templates.
- *
- * @param $vars
- *   An array of variables to pass to the theme template.
- * @param $hook
- *   The name of the template being rendered ("block" in this case.)
- */
-function iggy_preprocess_block(&$vars, $hook) {
-  switch ($vars['block']->delta) {
-    case 'ac_location-block_1':
-      $vars['classes_array'][] = 'clearfix';
-      break;
-  }
-}
-
-/**
  * Override theme_jcalendar_view to get rid of the hard-coded 'more' link.
  */
 function iggy_jcalendar_view($node) {
