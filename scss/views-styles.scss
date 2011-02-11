@@ -1,0 +1,17 @@
+/* $Id$ */
+
+/**
+ * @file
+ * Views Styling
+ */
+
+/* Unordered list style views (e.g. a list of post teasers) rarely need bullets/traditional list styling. */
+.view > .view-content > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.view > .view-content > ul > li {
+  list-style: none;
+  margin: 0 0 1em 0;
+}
