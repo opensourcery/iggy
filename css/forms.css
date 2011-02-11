@@ -1,0 +1,141 @@
+/* $Id$ */
+/**
+ * @file
+ * Form Styling
+ */
+/* line 11, ../scss/forms.scss */
+.form-item,
+.form-checkboxes,
+.form-radios {
+  margin: 1em 0;
+}
+
+/* line 17, ../scss/forms.scss */
+.form-item input.error,
+.form-item textarea.error,
+.form-item select.error {
+  border: 2px solid #c00;
+}
+
+/* line 21, ../scss/forms.scss */
+.form-item label {
+  display: block;
+  font-weight: bold;
+}
+
+/* line 26, ../scss/forms.scss */
+.form-item label.option {
+  display: inline;
+  font-weight: normal;
+}
+
+/* line 31, ../scss/forms.scss */
+.form-required {
+  color: #c00;
+}
+
+/* line 35, ../scss/forms.scss */
+.form-item .description {
+  font-size: 0.85em;
+}
+
+/* line 40, ../scss/forms.scss */
+.form-checkboxes .form-item,
+.form-radios .form-item {
+  margin: 0.4em 0;
+}
+
+/* line 48, ../scss/forms.scss */
+.container-inline div,
+.container-inline label {
+  display: inline;
+}
+
+/*
+ * Search (search-theme-form.tpl.php)
+ */
+/* line 62, ../scss/forms.scss */
+#edit-search-theme-form-1-wrapper label {
+  display: none;
+}
+
+/*
+ * Search (search-block-form.tpl.php)
+ */
+/* line 73, ../scss/forms.scss */
+#edit-search-block-form-1-wrapper label {
+  display: none;
+}
+
+/*
+ * Drupal's default login form block
+ */
+/* line 81, ../scss/forms.scss */
+#user-login-form {
+  text-align: left;
+  /* LTR */
+}
+
+/*
+ * OpenID
+ *
+ * The default styling for the OpenID login link seems to assume Garland's
+ * styling of list items.
+ */
+/* line 93, ../scss/forms.scss */
+#user-login-form ul {
+  margin-bottom: 0;
+  /* Position OpenID's ul next to the rest of the links. */
+}
+
+/* line 97, ../scss/forms.scss */
+#user-login-form li.openid-link {
+  margin-top: 1em;
+  margin-left: -20px;
+  /* LTR */
+  /* Un-do some of the padding on the ul list. */
+}
+
+/* line 102, ../scss/forms.scss */
+#user-login-form li.user-link {
+  margin-top: 1em;
+}
+
+/* line 106, ../scss/forms.scss */
+#user-login ul {
+  margin: 1em 0;
+}
+
+/* line 111, ../scss/forms.scss */
+#user-login li.openid-link,
+#user-login li.user-link {
+  margin-left: -2em;
+  /* LTR */
+  /* Un-do all of the padding on the ul list. */
+}
+
+/*
+ * Drupal admin tables
+ *
+ * We overrode these styles in html-elements.css, but restore them for the admin
+ * section of the site.
+ */
+/* line 123, ../scss/forms.scss */
+form tbody {
+  border-top: 1px solid #ccc;
+}
+
+/* line 128, ../scss/forms.scss */
+form th,
+form thead th {
+  text-align: left;
+  /* LTR */
+  padding-right: 1em;
+  /* LTR */
+  border-bottom: 3px solid #ccc;
+}
+
+/* line 134, ../scss/forms.scss */
+form tbody th {
+  border-bottom: 1px solid #ccc;
+}

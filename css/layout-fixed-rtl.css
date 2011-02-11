@@ -1,0 +1,94 @@
+/* $Id$ */
+/**
+ * @file
+ * RTL companion for the layout-fixed.css file.
+ */
+/*
+ * Content
+ */
+/* line 13, ../scss/layout-fixed-rtl.scss */
+#content,
+.no-sidebars #content {
+  float: right;
+  margin-left: -960px;
+  margin-right: 0;
+  /* Negative value of #content's width + left margin. */
+}
+
+/* line 19, ../scss/layout-fixed-rtl.scss */
+.sidebar-first #content {
+  margin-left: -960px;
+  /* The width of .region-sidebar-first. */
+  margin-right: 200px;
+  /* Negative value of #content's width + left margin. */
+}
+
+/* line 24, ../scss/layout-fixed-rtl.scss */
+.sidebar-second #content {
+  margin-left: -760px;
+  margin-right: 0;
+  /* Negative value of #content's width + left margin. */
+}
+
+/* line 29, ../scss/layout-fixed-rtl.scss */
+.two-sidebars #content {
+  margin-left: -760px;
+  /* The width of .region-sidebar-first */
+  margin-right: 200px;
+  /* Negative value of #content's width + left margin. */
+}
+
+/*
+ * Navigation
+ */
+/* line 37, ../scss/layout-fixed-rtl.scss */
+#navigation {
+  float: right;
+  margin-left: -100%;
+  margin-right: 0;
+  /* Negative value of #navigation's width + left margin. */
+}
+
+/* line 43, ../scss/layout-fixed-rtl.scss */
+#navigation ul {
+  text-align: right;
+}
+
+/* line 47, ../scss/layout-fixed-rtl.scss */
+#navigation li {
+  float: right;
+  padding: 0 0 0 10px;
+}
+
+/*
+ * First sidebar
+ */
+/* line 55, ../scss/layout-fixed-rtl.scss */
+.region-sidebar-first {
+  float: right;
+  margin-left: -200px;
+  margin-right: 0;
+  /* Negative value of .region-sidebar-first's width + left margin. */
+}
+
+/* line 61, ../scss/layout-fixed-rtl.scss */
+.region-sidebar-first .section {
+  margin: 0 0 0 20px;
+}
+
+/*
+ * Second sidebar
+ */
+/* line 68, ../scss/layout-fixed-rtl.scss */
+.region-sidebar-second {
+  float: right;
+  margin-left: -960px;
+  /* Width of content + sidebar-first. */
+  margin-right: 760px;
+  /* Negative value of .region-sidebar-second's width + left margin. */
+}
+
+/* line 74, ../scss/layout-fixed-rtl.scss */
+.region-sidebar-second .section {
+  margin: 0 20px 0 0;
+}

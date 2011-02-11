@@ -1,0 +1,60 @@
+/* $Id$ */
+/**
+ * @file
+ * Message Styling
+ *
+ * Sensible styling for Drupal's error/warning/status messages.
+ */
+/* line 14, ../scss/messages.scss */
+div.messages,
+div.status,
+div.warning,
+div.error {
+  min-height: 21px;
+  margin: 0 1em 5px 1em;
+  border: 2px solid #ff7;
+  padding: 5px 5px 5px 35px;
+  /* LTR */
+  color: #000;
+  background-color: #ffc;
+  background-image: url(../images/messages-status.png);
+  background-repeat: no-repeat;
+  background-position: 5px 5px;
+  /* LTR */
+}
+
+/* line 29, ../scss/messages.scss */
+div.warning {
+  border-color: #fc0;
+  background-image: url(../images/messages-warning.png);
+}
+
+/* line 35, ../scss/messages.scss */
+div.warning,
+tr.warning {
+  color: #000;
+  /* Drupal core uses #220 */
+  background-color: #ffc;
+}
+
+/* line 40, ../scss/messages.scss */
+div.error {
+  /* border: 1px solid #d77; */
+  /* Drupal core uses: 1px solid #d77 */
+  border-color: #c00;
+  background-image: url(../images/messages-error.png);
+}
+
+/* line 47, ../scss/messages.scss */
+div.error,
+tr.error {
+  color: #900;
+  /* Drupal core uses #200 */
+  background-color: #fee;
+}
+
+/* line 52, ../scss/messages.scss */
+div.messages ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}

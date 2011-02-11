@@ -1,0 +1,25 @@
+/* $Id$ */
+/**
+ * @file
+ * Navigation Styling
+ */
+/*
+ * The active item in a Drupal menu
+ */
+/* line 12, ../scss/navigation.scss */
+li a.active {
+  color: #000;
+}
+
+/*
+ * Navigation bar
+ */
+/*
+ * Primary and Secondary menu links
+ */
+/*
+ * Menu blocks
+ */
+/*
+ * "Menu block" blocks. See http://drupal.org/project/menu_block
+ */

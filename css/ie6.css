@@ -1,0 +1,117 @@
+/* $Id$ */
+/**
+ * @file
+ * CSS targeted specifically for Internet Explorer 5 and 6 for Windows.
+ *
+ * Any CSS in this file will override the rules specified in the ie.css file.
+ */
+/*
+ * Layout CSS
+ */
+/* line 15, ../scss/ie6.scss */
+body {
+  text-align: center;
+  /* 1st part of IE5/IE6quirks centering hack */
+}
+
+/* line 19, ../scss/ie6.scss */
+#page {
+  text-align: left;
+  /* LTR */
+  /* 2nd part of IE5/IE6quirks centering hack */
+}
+
+/* line 23, ../scss/ie6.scss */
+#main-wrapper {
+  zoom: 1;
+  /* Otherwise with a liquid layout, sidebars disappear when resizing the windows in IE6 */
+}
+
+/* line 30, ../scss/ie6.scss */
+#content,
+#navigation,
+.region-sidebar-first,
+.region-sidebar-second {
+  display: inline;
+  /* display inline or double your floated margin! [1] */
+  overflow: hidden;
+  /* in ie6, overflow auto is broken [2] and so is overflow visible [3] */
+  overflow-y: visible;
+}
+
+/*
+ * Tabs - IE 5 and 6 don't support PNGs with alpha transparency.
+ */
+/* line 43, ../scss/ie6.scss */
+ul.primary li a,
+ul.primary li a .tab,
+ul.secondary li a,
+ul.secondary li a .tab {
+  display: inline-block;
+  /* Otherwise the blocks mistakenly get 100% width in IE6 */
+}
+
+/* line 47, ../scss/ie6.scss */
+ul.primary li a {
+  background: url(../images/tab-left-ie6.png) no-repeat left -38px;
+}
+
+/* line 51, ../scss/ie6.scss */
+ul.primary li a .tab {
+  background: url(../images/tab-right-ie6.png) no-repeat right -38px;
+}
+
+/* line 55, ../scss/ie6.scss */
+ul.primary li a:hover {
+  background: url(../images/tab-left-ie6.png) no-repeat left -76px;
+}
+
+/* line 59, ../scss/ie6.scss */
+ul.primary li a:hover .tab {
+  background: url(../images/tab-right-ie6.png) no-repeat right -76px;
+}
+
+/* line 64, ../scss/ie6.scss */
+ul.primary li.active a,
+ul.primary li.active a:hover {
+  background: url(../images/tab-left-ie6.png) no-repeat left 0;
+}
+
+/* line 69, ../scss/ie6.scss */
+ul.primary li.active a .tab,
+ul.primary li.active a:hover .tab {
+  background: url(../images/tab-right-ie6.png) no-repeat right 0;
+}
+
+/*
+ * Messages - IE 5 and 6 don't support PNGs with alpha transparency.
+ */
+/* line 80, ../scss/ie6.scss */
+div.messages,
+div.status,
+div.warning,
+div.error {
+  background-image: url(../images/messages-status-ie6.png);
+}
+
+/* line 84, ../scss/ie6.scss */
+div.warning {
+  background-image: url(../images/messages-warning-ie6.png);
+}
+
+/* line 88, ../scss/ie6.scss */
+div.error {
+  background-image: url(../images/messages-error-ie6.png);
+}
+
+/*
+ * REFERENCES
+ *
+
+1. http://www.positioniseverything.net/explorer/doubled-margin.html
+2. http://browservulsel.blogspot.com/2005/04/ie-overflow-auto-scrollbar-overlap.html
+3. http://www.howtocreate.co.uk/wrongWithIE/?chapter=overflow%3Avisible%3B
+4. http://www.ryanbrill.com/archives/multiple-classes-in-ie
+
+ *
+ */

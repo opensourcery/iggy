@@ -1,0 +1,9 @@
+/* $Id$ */
+/**
+ * @file
+ * Block Styling
+ */
+/* line 9, ../scss/blocks.scss */
+.block {
+  margin-bottom: 1em;
+}

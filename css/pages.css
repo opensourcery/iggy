@@ -1,0 +1,264 @@
+/* $Id$ */
+/**
+ * @file
+ * Page Styling
+ *
+ * Style the markup found in page.tpl.php. Also includes some styling of
+ * miscellaneous Drupal elements that appear in the $content variable, such as
+ * ul.links, .pager, .more-link, etc.
+ */
+/*
+ * Body
+ */
+/* line 16, ../scss/pages.scss */
+body {
+  background: #EDEDED;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * The skip navigation link will be completely hidden until a user tabs to the
+ * link. See http://www.webaim.org/techniques/skipnav/
+ */
+/* line 33, ../scss/pages.scss */
+#skip-link a,
+#skip-link a:visited {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: -500px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  text-align: center;
+  background-color: #666;
+  color: #fff;
+}
+
+/* line 48, ../scss/pages.scss */
+#skip-link a:hover,
+#skip-link a:active,
+#skip-link a:focus {
+  position: static;
+  width: 100%;
+  height: auto;
+  padding: 2px 0 3px 0;
+}
+
+/*
+ * Header
+ */
+/* line 64, ../scss/pages.scss */
+#logo {
+  float: left;
+  /* LTR */
+  margin: 0;
+  padding: 0;
+}
+
+/* line 70, ../scss/pages.scss */
+#logo img {
+  vertical-align: bottom;
+}
+
+/* line 78, ../scss/pages.scss */
+h1#site-name,
+div#site-name {
+  margin: 0;
+  font-size: 2em;
+  line-height: 1.3em;
+}
+
+/* line 85, ../scss/pages.scss */
+#site-name a:link,
+#site-name a:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 91, ../scss/pages.scss */
+#site-name a:hover,
+#site-name a:focus {
+  text-decoration: underline;
+}
+
+/*
+ * Main (container for everything else)
+ */
+/* line 107, ../scss/pages.scss */
+#main {
+  background: #FFFFFF;
+}
+
+/*
+ * Content
+ */
+/* line 126, ../scss/pages.scss */
+.breadcrumb {
+  padding-bottom: 0;
+  /* Undo system.css */
+}
+
+/* line 132, ../scss/pages.scss */
+h1.title,
+h2.title,
+h3.title {
+  margin: 0;
+}
+
+/* line 136, ../scss/pages.scss */
+tr.even {
+  /* background-color: #eee; */
+  /* Drupal core uses a #eee background */
+}
+
+/* line 140, ../scss/pages.scss */
+tr.odd {
+  /* background-color: #eee; */
+  /* Drupal core uses a #eee background */
+}
+
+/* line 151, ../scss/pages.scss */
+div.warning,
+tr.warning {
+  /* border: 1px solid #f0c020; */
+  /* Drupal core uses: 1px solid #f0c020 */
+}
+
+/* line 159, ../scss/pages.scss */
+.error {
+  /* color: #e55; */
+  /* Drupal core uses a #e55 background */
+}
+
+/* line 163, ../scss/pages.scss */
+.warning {
+  /* color: #e09010; */
+  /* Drupal core uses a #e09010 background */
+}
+
+/* line 170, ../scss/pages.scss */
+.help {
+  margin: 1em 0;
+}
+
+/* line 174, ../scss/pages.scss */
+.more-help-link {
+  font-size: 0.85em;
+  text-align: right;
+}
+
+/* line 184, ../scss/pages.scss */
+.region-header ul.menu,
+.region-page-closure ul.menu,
+ul.links {
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* line 189, ../scss/pages.scss */
+ul.links.inline {
+  margin: 0;
+  display: inline;
+}
+
+/* line 196, ../scss/pages.scss */
+.region-header ul.menu li,
+.region-page-closure ul.menu li,
+ul.links li {
+  display: inline;
+  list-style-type: none;
+  padding: 0 0.5em;
+}
+
+/* line 202, ../scss/pages.scss */
+.pager {
+  clear: both;
+  margin: 1em 0;
+  text-align: center;
+}
+
+/* line 209, ../scss/pages.scss */
+.pager a,
+.pager strong.pager-current {
+  padding: 0.5em;
+}
+
+/* line 213, ../scss/pages.scss */
+.feed-icons {
+  margin: 1em 0;
+}
+
+/* line 217, ../scss/pages.scss */
+.more-link {
+  text-align: right;
+  /* LTR */
+}
+
+/*
+ * First sidebar (on left in LTR languages, on right in RTL)
+ *
+ * Remember to NOT add padding or margin to your .region-sidebar-first
+ * (see the layout.css file.)
+ */
+/*
+ * Second sidebar (on right in LTR languages, on left in RTL)
+ *
+ * Remember to NOT add padding or margin to your .region-sidebar-second
+ * (see the layout.css file.)
+ */
+/*
+ * Footer
+ */
+/*
+ * Closure
+ */
+/*
+ * Drupal boxes
+ *
+ * Wrapper for Comment form, Comment viewing options, Menu admin, and
+ * Search results.
+ */
+/*
+ * Markup free clearing (See: http://www.positioniseverything.net/easyclearing.html )
+ */
+/* line 288, ../scss/pages.scss */
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/**
+ * Hide elements from all users.
+ *
+ * Used for elements which should not be immediately displayed to any user. An
+ * example would be a collapsible fieldset that will be expanded with a click
+ * from a user. The effect of this class can be toggled with the jQuery show()
+ * and hide() functions.
+ */
+/* line 304, ../scss/pages.scss */
+.element-hidden {
+  display: none;
+}
+
+/**
+ * Hide elements visually, but keep them available for screen-readers.
+ *
+ * Used for information required for screen-reader users to understand and use
+ * the site where visual display is undesirable. Information provided in this
+ * manner should be kept concise, to avoid unnecessary burden on the user. Must
+ * not be used for focusable elements (such as links and form elements) as this
+ * causes issues for keyboard only or voice recognition users. "!important" is
+ * used to prevent unintentional overrides.
+ */
+/* line 318, ../scss/pages.scss */
+.element-invisible {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}

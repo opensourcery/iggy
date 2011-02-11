@@ -1,0 +1,50 @@
+/* $Id$ */
+/**
+ * @file
+ * Node Styling
+ *
+ * Style anything that isn't in the $content variable.
+ */
+/* line 17, ../scss/nodes.scss */
+.node-unpublished {
+  /* background-color: #fff4f4; */
+  /* Drupal core uses a #fff4f4 background */
+}
+
+/* line 22, ../scss/nodes.scss */
+.node-unpublished div.unpublished,
+.comment-unpublished div.unpublished {
+  height: 0;
+  overflow: visible;
+  color: #d8d8d8;
+  font-size: 75px;
+  line-height: 1;
+  font-family: Impact, "Arial Narrow", Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  word-wrap: break-word;
+  /* A very nice CSS3 property */
+}
+
+/* All nodes are given a node-type-FOO class that describes the type of
+ * content that it is. If you create a new content type called
+ * "my-custom-type", it will receive a "node-type-my-custom-type" class.
+ */
+/* line 54, ../scss/nodes.scss */
+.marker {
+  color: #c00;
+}
+
+/* line 62, ../scss/nodes.scss */
+.node.node-unpublished .picture,
+.comment.comment-unpublished .picture {
+  position: relative;
+  /* Otherwise floated pictures will appear below the "Unpublished" text. */
+}
+
+/* line 81, ../scss/nodes.scss */
+.preview .node {
+  /* background-color: #ffffea; */
+  /* Drupal core uses a #ffffea background */
+}
