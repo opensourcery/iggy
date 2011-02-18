@@ -3,10 +3,14 @@
  * @file
  * Navigation Styling
  */
+/**
+ * @file
+ * Constants
+ */
 /*
  * The active item in a Drupal menu
  */
-/* line 12, ../scss/navigation.scss */
+/* line 13, ../scss/navigation.scss */
 li a.active {
   color: #000;
 }
@@ -14,6 +18,23 @@ li a.active {
 /*
  * Navigation bar
  */
+/* line 21, ../scss/navigation.scss */
+#navigation a {
+  color: #FFF;
+  display: block;
+  font-size: 1.3em;
+  font-weight: bold;
+  text-decoration: none;
+}
+/* line 28, ../scss/navigation.scss */
+#navigation li.active {
+  background-color: #FFF;
+}
+/* line 30, ../scss/navigation.scss */
+#navigation li.active a {
+  color: #000;
+}
+
 /*
  * Primary and Secondary menu links
  */

@@ -5,6 +5,7 @@
  * Navigation Styling
  */
 
+@import "constants";
 
 /*
  * The active item in a Drupal menu
@@ -17,6 +18,19 @@ li a.active {
  * Navigation bar
  */
 #navigation {
+  a {
+    color: #FFF;
+    display: block;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  li.active {
+    background-color: #FFF;
+    a {
+      color: #000;
+    }
+  }
 }
 
 .region-navigation {
