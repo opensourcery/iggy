@@ -262,3 +262,93 @@ ul.links li {
   /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
 }
+
+/*****************************************************************************
+ ************************* Calendar Stylings *********************************
+ ****************************************************************************/
+.view-id-shift_calendar.view-display-id-calendar_1 {
+  padding: 0 40px;
+}
+/* temporarily hide these links until we decide what to do with them*/
+.calendar-calendar > ul.links {
+  display: none;
+}
+.calendar-calendar div.date-nav {
+  height: 10em;
+  background-color: transparent;
+  border: 0 none;
+  padding: 0;
+}
+  .calendar-calendar div.date-prev{
+    width: 150px;
+    height: 2.5em;
+    text-align: left;
+  }
+  .calendar-calendar div.date-next {
+    width: 150px;
+    height: 2.5em;
+    text-align: right;
+  }
+  .calendar-calendar div.date-prev a,
+  .calendar-calendar div.date-next a {
+    display: block;
+    font-size: 1.5em;
+    height: 2.5em;
+    width: 150px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+  }
+  .calendar-calendar div.date-heading {
+    width: 580px;
+    padding-bottom: 2em;
+  }
+    .calendar-calendar div.date-heading h3 {
+      font-size: 2.5em;
+      color: black;
+    }
+.calendar-calendar table th.days {
+  color: #B1B1B1;
+  height: 3.4em;
+  font-size: 1.1em;
+  background-color: #383838;
+  border-bottom: 10px solid white;
+}
+.calendar-calendar table td {
+  background-color: #CBCBCB;
+  border-color: white;
+}
+  .calendar-calendar table td div.inner {
+    min-height: 9em;
+  }
+.calendar-calendar td.empty {
+  background-color: #E1E1E1;
+  border-color: white;
+}
+.calendar-calendar tr td.today,
+.calendar-calendar tr.odd td.today,
+.calendar-calendar tr.even td.today {
+  background-color: #383838;
+}
+  .calendar-calendar td div.calendar-empty {
+    line-height: 0;
+  }
+    .calendar-calendar td .inner div.month.day {
+      float: left;
+      width: auto;
+      border-width: 0 0 0 0;
+      padding: 6px 0 0 8px;
+      background-color: transparent;
+    }
+      .calendar-calendar td .inner div.month.day a {
+        font-size: 18px;
+        font-family: "Arial", sans-serif;
+        color: black;
+        background-color: transparent;
+      }
+      .calendar-calendar tr td.today .inner .month.day a,
+      .calendar-calendar tr.odd td.today .inner .month.day a,
+      .calendar-calendar tr.even td.today .inner .month.day a {
+        color: white;
+      }
+
