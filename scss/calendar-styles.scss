@@ -11,34 +11,28 @@
   display: none;
 }
 .calendar-calendar div.date-nav {
-  height: 10em;
+  height: 36px;
   background-color: transparent;
   border: 0 none;
   padding: 0;
 }
-  .calendar-calendar div.date-prev{
-    width: 150px;
-    height: 2.5em;
-    text-align: left;
+.calendar-calendar div.date-nav {
+  div.date-prev,
+  div.date-next {
+    width: 128px;
+    a {
+      color: #353535;
+      display: block;
+      font-size: 1.5em;
+      font-weight: bold;
+      height: 28px;
+      text-align: center;
+      text-decoration: none;
+    }
   }
-  .calendar-calendar div.date-next {
-    width: 150px;
-    height: 2.5em;
-    text-align: right;
-  }
-  .calendar-calendar div.date-prev a,
-  .calendar-calendar div.date-next a {
-    display: block;
-    font-size: 1.5em;
-    height: 2.5em;
-    width: 150px;
-    text-decoration: none;
-    font-weight: bold;
-    text-align: center;
-  }
+}
   .calendar-calendar div.date-heading {
-    width: 580px;
-    padding-bottom: 2em;
+    width: 644px;
   }
     .calendar-calendar div.date-heading h3 {
       font-size: 2.5em;
