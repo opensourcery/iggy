@@ -16,7 +16,7 @@
   background-color: <?php print $primary; ?>;
 }
 .calendar-calendar table th.days {
-  color: #B1B1B1;
+  color: <?php print designkit_colorshift($primary, '#FFFFFF', .75); ?>;
   background-color: <?php print $primary; ?>;
 }
 
