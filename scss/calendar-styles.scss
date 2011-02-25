@@ -45,27 +45,18 @@
       color: black;
     }
 .calendar-calendar table th.days {
-  color: #B1B1B1;
-  height: 3.4em;
   font-size: 1.1em;
-  background-color: #383838;
+  height: 3.4em;
   border-bottom: 10px solid white;
 }
 .calendar-calendar table td {
-  background-color: #CBCBCB;
   border-color: white;
 }
   .calendar-calendar table td div.inner {
     min-height: 9em;
   }
 .calendar-calendar td.empty {
-  background-color: #E1E1E1;
   border-color: white;
-}
-.calendar-calendar tr td.today,
-.calendar-calendar tr.odd td.today,
-.calendar-calendar tr.even td.today {
-  background-color: #383838;
 }
   .calendar-calendar td div.calendar-empty {
     line-height: 0;

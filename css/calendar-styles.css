@@ -59,43 +59,32 @@
 
 /* line 47, ../scss/calendar-styles.scss */
 .calendar-calendar table th.days {
-  color: #B1B1B1;
-  height: 3.4em;
   font-size: 1.1em;
-  background-color: #383838;
+  height: 3.4em;
   border-bottom: 10px solid white;
 }
 
-/* line 54, ../scss/calendar-styles.scss */
+/* line 52, ../scss/calendar-styles.scss */
 .calendar-calendar table td {
-  background-color: #CBCBCB;
   border-color: white;
 }
 
-/* line 58, ../scss/calendar-styles.scss */
+/* line 55, ../scss/calendar-styles.scss */
 .calendar-calendar table td div.inner {
   min-height: 9em;
 }
 
-/* line 61, ../scss/calendar-styles.scss */
+/* line 58, ../scss/calendar-styles.scss */
 .calendar-calendar td.empty {
-  background-color: #E1E1E1;
   border-color: white;
 }
 
-/* line 67, ../scss/calendar-styles.scss */
-.calendar-calendar tr td.today,
-.calendar-calendar tr.odd td.today,
-.calendar-calendar tr.even td.today {
-  background-color: #383838;
-}
-
-/* line 70, ../scss/calendar-styles.scss */
+/* line 61, ../scss/calendar-styles.scss */
 .calendar-calendar td div.calendar-empty {
   line-height: 0;
 }
 
-/* line 73, ../scss/calendar-styles.scss */
+/* line 64, ../scss/calendar-styles.scss */
 .calendar-calendar td .inner div.month.day {
   float: left;
   width: auto;
@@ -104,7 +93,7 @@
   background-color: transparent;
 }
 
-/* line 80, ../scss/calendar-styles.scss */
+/* line 71, ../scss/calendar-styles.scss */
 .calendar-calendar td .inner div.month.day a {
   font-size: 18px;
   font-family: "Arial", sans-serif;
@@ -112,7 +101,7 @@
   background-color: transparent;
 }
 
-/* line 88, ../scss/calendar-styles.scss */
+/* line 79, ../scss/calendar-styles.scss */
 .calendar-calendar tr td.today .inner .month.day a,
 .calendar-calendar tr.odd td.today .inner .month.day a,
 .calendar-calendar tr.even td.today .inner .month.day a {
