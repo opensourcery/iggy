@@ -44,9 +44,11 @@ body {
  * Header
  */
 #header {
+  height: $header_height;
 }
 
 #header .section {
+  padding: 20px 0;
 }
 
 #search-box {
