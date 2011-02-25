@@ -19,19 +19,32 @@ li a.active {
  * Navigation bar
  */
 /* line 21, ../scss/navigation.scss */
+#navigation ul {
+  border-top: 5px solid #ededed;
+}
+/* line 25, ../scss/navigation.scss */
+#navigation li {
+  padding: 0;
+}
+/* line 26, ../scss/navigation.scss */
 #navigation a {
+  border-top: 5px solid transparent;
   color: #FFF;
   display: block;
+  line-height: 48px;
+  margin-top: -5px;
+  padding: 0 2em;
   font-size: 1.3em;
   font-weight: bold;
   text-decoration: none;
 }
-/* line 28, ../scss/navigation.scss */
+/* line 37, ../scss/navigation.scss */
 #navigation li.active {
   background-color: #FFF;
 }
-/* line 30, ../scss/navigation.scss */
+/* line 39, ../scss/navigation.scss */
 #navigation li.active a {
+  border-top: 5px solid black;
   color: #000;
 }
 

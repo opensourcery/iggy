@@ -7,12 +7,16 @@
  * miscellaneous Drupal elements that appear in the $content variable, such as
  * ul.links, .pager, .more-link, etc.
  */
+/**
+ * @file
+ * Constants
+ */
 /*
  * Body
  */
-/* line 16, ../scss/pages.scss */
+/* line 17, ../scss/pages.scss */
 body {
-  background: #EDEDED;
+  background: #ededed;
   margin: 0;
   padding: 0;
 }
@@ -21,7 +25,7 @@ body {
  * The skip navigation link will be completely hidden until a user tabs to the
  * link. See http://www.webaim.org/techniques/skipnav/
  */
-/* line 33, ../scss/pages.scss */
+/* line 34, ../scss/pages.scss */
 #skip-link a,
 #skip-link a:visited {
   position: absolute;
@@ -36,7 +40,7 @@ body {
   color: #fff;
 }
 
-/* line 48, ../scss/pages.scss */
+/* line 49, ../scss/pages.scss */
 #skip-link a:hover,
 #skip-link a:active,
 #skip-link a:focus {
@@ -49,7 +53,7 @@ body {
 /*
  * Header
  */
-/* line 64, ../scss/pages.scss */
+/* line 65, ../scss/pages.scss */
 #logo {
   float: left;
   /* LTR */
@@ -57,12 +61,12 @@ body {
   padding: 0;
 }
 
-/* line 70, ../scss/pages.scss */
+/* line 71, ../scss/pages.scss */
 #logo img {
   vertical-align: bottom;
 }
 
-/* line 78, ../scss/pages.scss */
+/* line 79, ../scss/pages.scss */
 h1#site-name,
 div#site-name {
   margin: 0;
@@ -70,14 +74,14 @@ div#site-name {
   line-height: 1.3em;
 }
 
-/* line 85, ../scss/pages.scss */
+/* line 86, ../scss/pages.scss */
 #site-name a:link,
 #site-name a:visited {
   color: #000;
   text-decoration: none;
 }
 
-/* line 91, ../scss/pages.scss */
+/* line 92, ../scss/pages.scss */
 #site-name a:hover,
 #site-name a:focus {
   text-decoration: underline;
@@ -86,7 +90,7 @@ div#site-name {
 /*
  * Main (container for everything else)
  */
-/* line 107, ../scss/pages.scss */
+/* line 108, ../scss/pages.scss */
 #main {
   background: #FFFFFF;
 }
@@ -94,62 +98,62 @@ div#site-name {
 /*
  * Content
  */
-/* line 126, ../scss/pages.scss */
+/* line 127, ../scss/pages.scss */
 .breadcrumb {
   padding-bottom: 0;
   /* Undo system.css */
 }
 
-/* line 132, ../scss/pages.scss */
+/* line 133, ../scss/pages.scss */
 h1.title,
 h2.title,
 h3.title {
   margin: 0;
 }
 
-/* line 136, ../scss/pages.scss */
+/* line 137, ../scss/pages.scss */
 tr.even {
   /* background-color: #eee; */
   /* Drupal core uses a #eee background */
 }
 
-/* line 140, ../scss/pages.scss */
+/* line 141, ../scss/pages.scss */
 tr.odd {
   /* background-color: #eee; */
   /* Drupal core uses a #eee background */
 }
 
-/* line 151, ../scss/pages.scss */
+/* line 152, ../scss/pages.scss */
 div.warning,
 tr.warning {
   /* border: 1px solid #f0c020; */
   /* Drupal core uses: 1px solid #f0c020 */
 }
 
-/* line 159, ../scss/pages.scss */
+/* line 160, ../scss/pages.scss */
 .error {
   /* color: #e55; */
   /* Drupal core uses a #e55 background */
 }
 
-/* line 163, ../scss/pages.scss */
+/* line 164, ../scss/pages.scss */
 .warning {
   /* color: #e09010; */
   /* Drupal core uses a #e09010 background */
 }
 
-/* line 170, ../scss/pages.scss */
+/* line 171, ../scss/pages.scss */
 .help {
   margin: 1em 0;
 }
 
-/* line 174, ../scss/pages.scss */
+/* line 175, ../scss/pages.scss */
 .more-help-link {
   font-size: 0.85em;
   text-align: right;
 }
 
-/* line 184, ../scss/pages.scss */
+/* line 185, ../scss/pages.scss */
 .region-header ul.menu,
 .region-page-closure ul.menu,
 ul.links {
@@ -157,13 +161,13 @@ ul.links {
   padding: 0;
 }
 
-/* line 189, ../scss/pages.scss */
+/* line 190, ../scss/pages.scss */
 ul.links.inline {
   margin: 0;
   display: inline;
 }
 
-/* line 196, ../scss/pages.scss */
+/* line 197, ../scss/pages.scss */
 .region-header ul.menu li,
 .region-page-closure ul.menu li,
 ul.links li {
@@ -172,25 +176,25 @@ ul.links li {
   padding: 0 0.5em;
 }
 
-/* line 202, ../scss/pages.scss */
+/* line 203, ../scss/pages.scss */
 .pager {
   clear: both;
   margin: 1em 0;
   text-align: center;
 }
 
-/* line 209, ../scss/pages.scss */
+/* line 210, ../scss/pages.scss */
 .pager a,
 .pager strong.pager-current {
   padding: 0.5em;
 }
 
-/* line 213, ../scss/pages.scss */
+/* line 214, ../scss/pages.scss */
 .feed-icons {
   margin: 1em 0;
 }
 
-/* line 217, ../scss/pages.scss */
+/* line 218, ../scss/pages.scss */
 .more-link {
   text-align: right;
   /* LTR */
@@ -223,7 +227,7 @@ ul.links li {
 /*
  * Markup free clearing (See: http://www.positioniseverything.net/easyclearing.html )
  */
-/* line 288, ../scss/pages.scss */
+/* line 289, ../scss/pages.scss */
 .clearfix:after {
   content: ".";
   display: block;
@@ -240,7 +244,7 @@ ul.links li {
  * from a user. The effect of this class can be toggled with the jQuery show()
  * and hide() functions.
  */
-/* line 304, ../scss/pages.scss */
+/* line 305, ../scss/pages.scss */
 .element-hidden {
   display: none;
 }
@@ -255,7 +259,7 @@ ul.links li {
  * causes issues for keyboard only or voice recognition users. "!important" is
  * used to prevent unintentional overrides.
  */
-/* line 318, ../scss/pages.scss */
+/* line 319, ../scss/pages.scss */
 .element-invisible {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);

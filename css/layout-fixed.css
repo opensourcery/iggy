@@ -122,14 +122,14 @@
   /* Negative value of #navigation's width + left margin. */
   padding: 0;
   /* DO NOT CHANGE. Add padding or margin to #navigation .section. */
-  height: 48px;
+  height: 53px;
 }
 
 /* line 118, ../scss/layout-fixed.scss */
 .with-navigation #content,
 .with-navigation .region-sidebar-first,
 .with-navigation .region-sidebar-second {
-  margin-top: 48px;
+  margin-top: 53px;
   /* Set this to the same value as the navigation height above. */
 }
 
@@ -145,14 +145,12 @@
 #navigation li {
   float: left;
   /* LTR */
-  padding: 0 2em;
-  /* LTR */
 }
 
 /*
  * First sidebar
  */
-/* line 139, ../scss/layout-fixed.scss */
+/* line 138, ../scss/layout-fixed.scss */
 .region-sidebar-first {
   float: left;
   /* LTR */
@@ -166,7 +164,7 @@
   /* DO NOT CHANGE. Add padding or margin to .region-sidebar-first .section. */
 }
 
-/* line 147, ../scss/layout-fixed.scss */
+/* line 146, ../scss/layout-fixed.scss */
 .region-sidebar-first .section {
   margin: 0 20px 0 0;
   /* LTR */
@@ -176,7 +174,7 @@
 /*
  * Second sidebar
  */
-/* line 155, ../scss/layout-fixed.scss */
+/* line 154, ../scss/layout-fixed.scss */
 .region-sidebar-second {
   float: left;
   /* LTR */
@@ -191,7 +189,7 @@
   /* DO NOT CHANGE. Add padding or margin to .region-sidebar-second .section. */
 }
 
-/* line 163, ../scss/layout-fixed.scss */
+/* line 162, ../scss/layout-fixed.scss */
 .region-sidebar-second .section {
   margin: 0 0 0 20px;
   /* LTR */
@@ -207,7 +205,7 @@
 /*
  * Prevent overflowing content
  */
-/* line 192, ../scss/layout-fixed.scss */
+/* line 191, ../scss/layout-fixed.scss */
 #header,
 #content,
 #navigation,
@@ -220,7 +218,7 @@
   /* A very nice CSS3 property */
 }
 
-/* line 197, ../scss/layout-fixed.scss */
+/* line 196, ../scss/layout-fixed.scss */
 #navigation {
   overflow: hidden;
   /* May need to be removed if using a dynamic drop-down menu */

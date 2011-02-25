@@ -18,9 +18,18 @@ li a.active {
  * Navigation bar
  */
 #navigation {
+  ul {
+    border-top: $navigation_indicator_height solid $color_body;
+  }
+
+  li { padding: 0; }
   a {
+    border-top: $navigation_indicator_height solid transparent;
     color: #FFF;
     display: block;
+    line-height: $navigation_item_height;
+    margin-top: -$navigation_indicator_height;
+    padding: 0 2em;
     font-size: 1.3em;
     font-weight: bold;
     text-decoration: none;
@@ -28,6 +37,7 @@ li a.active {
   li.active {
     background-color: #FFF;
     a {
+      border-top: $navigation_indicator_height solid $color_navigation_indicator;
       color: #000;
     }
   }

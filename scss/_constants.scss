@@ -3,6 +3,10 @@
  * Constants
  */
 
-$navigation_height: 48px;
+$navigation_item_height: 48px;
 $navigation_indicator_height: 5px;
+$navigation_height: $navigation_item_height + $navigation_indicator_height;
 
+// Colors
+$color_body: #EDEDED;
+$color_navigation_indicator: #000000;

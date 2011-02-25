@@ -9,12 +9,13 @@
  * ul.links, .pager, .more-link, etc.
  */
 
+@import "constants";
 
 /*
  * Body
  */
 body {
-  background: #EDEDED;
+  background: $color_body;
   margin: 0;
   padding: 0;
 }
