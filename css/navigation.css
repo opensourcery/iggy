@@ -24,25 +24,30 @@ li a.active {
 }
 /* line 25, ../scss/navigation.scss */
 #navigation li {
+  border-right: 1px solid #FFF;
   padding: 0;
 }
-/* line 26, ../scss/navigation.scss */
+/* line 29, ../scss/navigation.scss */
+#navigation li.last, #navigation li.active {
+  border-right: none;
+}
+/* line 32, ../scss/navigation.scss */
 #navigation a {
   border-top: 5px solid transparent;
   color: #FFF;
   display: block;
   line-height: 48px;
   margin-top: -5px;
-  padding: 0 2em;
+  padding: 0 24px;
   font-size: 1.3em;
   font-weight: bold;
   text-decoration: none;
 }
-/* line 37, ../scss/navigation.scss */
+/* line 43, ../scss/navigation.scss */
 #navigation li.active {
   background-color: #FFF;
 }
-/* line 39, ../scss/navigation.scss */
+/* line 45, ../scss/navigation.scss */
 #navigation li.active a {
   border-top: 5px solid black;
   color: #000;

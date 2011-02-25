@@ -22,14 +22,20 @@ li a.active {
     border-top: $navigation_indicator_height solid $color_body;
   }
 
-  li { padding: 0; }
+  li {
+    border-right: 1px solid #FFF;
+    padding: 0;
+  }
+  li.last, li.active {
+    border-right: none;
+  }
   a {
     border-top: $navigation_indicator_height solid transparent;
     color: #FFF;
     display: block;
     line-height: $navigation_item_height;
     margin-top: -$navigation_indicator_height;
-    padding: 0 2em;
+    padding: 0 24px;
     font-size: 1.3em;
     font-weight: bold;
     text-decoration: none;
