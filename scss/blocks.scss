@@ -7,7 +7,7 @@
 
 
 .block /* Block wrapper */ {
-  margin-bottom: 1em;
+ /* margin-bottom: 1em; */
 }
 
 .block.region-odd /* Zebra striping for each block in the region */ {
@@ -91,4 +91,41 @@
 #block-user-3 /* "Who's online" block for a list of the online users */ {
 }
 
+/* Welcome Message and Next Shift styling */
 
+.region-header .block {
+  margin: 0px 0px 0px 0px;
+}
+
+#block-boxes-volunteer_shifts_welcome_message,
+#block-views-my_shift_signups-block_1 {
+  float: right;
+  border: 1px solid #FFF;
+  background: #d2d2d2; /* Should be replaced by a variable */
+  padding: 5px;
+  margin: 0px 0px 0px 0px;
+  width: 375px;
+
+  h2.title {
+    display: block;
+    background: #777;
+    line-height: 30px;
+    padding: 0 5px;
+  }
+  
+  .item-list ul, .item-list ul li {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0;
+  }
+
+  .item-list ul li .views-field-field-shift-date-value {
+    font-size: 1.125em;
+  } 
+
+  .item-list ul li .views-field-edit-node,
+  .item-list ul li .views-field-delete-node {
+    display: inline;
+    margin: 0 3px 0 0px; 
+  }
+}

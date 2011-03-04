@@ -5,5 +5,52 @@
  */
 /* line 9, ../scss/blocks.scss */
 .block {
-  margin-bottom: 1em;
+  /* margin-bottom: 1em; */
+}
+
+/* Welcome Message and Next Shift styling */
+/* line 96, ../scss/blocks.scss */
+.region-header .block {
+  margin: 0px 0px 0px 0px;
+}
+
+/* line 101, ../scss/blocks.scss */
+#block-boxes-volunteer_shifts_welcome_message,
+#block-views-my_shift_signups-block_1 {
+  float: right;
+  border: 1px solid #FFF;
+  background: #d2d2d2;
+  /* Should be replaced by a variable */
+  padding: 5px;
+  margin: 0px 0px 0px 0px;
+  width: 375px;
+}
+/* line 109, ../scss/blocks.scss */
+#block-boxes-volunteer_shifts_welcome_message h2.title,
+#block-views-my_shift_signups-block_1 h2.title {
+  display: block;
+  background: #777;
+  line-height: 30px;
+  padding: 0 5px;
+}
+/* line 116, ../scss/blocks.scss */
+#block-boxes-volunteer_shifts_welcome_message .item-list ul, #block-boxes-volunteer_shifts_welcome_message .item-list ul li,
+#block-views-my_shift_signups-block_1 .item-list ul,
+#block-views-my_shift_signups-block_1 .item-list ul li {
+  list-style: none;
+  padding: 0;
+  margin: 5px 0;
+}
+/* line 122, ../scss/blocks.scss */
+#block-boxes-volunteer_shifts_welcome_message .item-list ul li .views-field-field-shift-date-value,
+#block-views-my_shift_signups-block_1 .item-list ul li .views-field-field-shift-date-value {
+  font-size: 1.125em;
+}
+/* line 127, ../scss/blocks.scss */
+#block-boxes-volunteer_shifts_welcome_message .item-list ul li .views-field-edit-node,
+#block-boxes-volunteer_shifts_welcome_message .item-list ul li .views-field-delete-node,
+#block-views-my_shift_signups-block_1 .item-list ul li .views-field-edit-node,
+#block-views-my_shift_signups-block_1 .item-list ul li .views-field-delete-node {
+  display: inline;
+  margin: 0 3px 0 0px;
 }

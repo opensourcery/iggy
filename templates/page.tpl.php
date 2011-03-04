@@ -124,6 +124,14 @@
     <div id="skip-link"><a href="#main-menu"><?php print t('Jump to Navigation'); ?></a></div>
   <?php endif; ?>
 
+  <?php if ($user_tools): ?>
+    <div id="user-tools-wrapper">
+      <div id="user-toolbar">
+        <?php print $user_tools; ?>
+      </div>
+    </div>
+  <?php endif; ?>
+
   <div id="page-wrapper"><div id="page">
 
     <div id="header"><div class="section clearfix">
