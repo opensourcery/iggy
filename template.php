@@ -54,3 +54,13 @@ function iggy_date_single_day_element($form) {
   
   return $output;
 }
+
+/**
+ * Preprocessor for theme('page').
+ */
+function iggy_preprocess_page(&$vars) {
+  if (drupal_is_front_page()) {
+    // Unset the title.
+    $vars['title'] = FALSE;
+  }
+}
