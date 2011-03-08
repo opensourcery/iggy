@@ -35,6 +35,12 @@
       background-color: #ECE7E2;
     }
   }
+  div.date-prev span a:link {
+    float: left;
+  }
+  div.date-prev span a:link {
+    float: right;
+  }
 }
   .calendar-calendar div.date-heading {
     width: 644px;
@@ -79,3 +85,10 @@
         color: white;
       }
 
+#calpopup-body {
+  margin: 1em;
+  max-height: 10em;
+  overflow-y: auto;
+  position: relative;
+  font-size: 0.875em; 
+}

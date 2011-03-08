@@ -40,46 +40,54 @@
   -moz-border-radius: 3px 3px 3px 3px;
   background-color: #ECE7E2;
 }
+/* line 38, ../scss/calendar-styles.scss */
+.calendar-calendar div.date-nav div.date-prev span a:link {
+  float: left;
+}
+/* line 41, ../scss/calendar-styles.scss */
+.calendar-calendar div.date-nav div.date-prev span a:link {
+  float: right;
+}
 
-/* line 39, ../scss/calendar-styles.scss */
+/* line 45, ../scss/calendar-styles.scss */
 .calendar-calendar div.date-heading {
   width: 644px;
 }
 
-/* line 42, ../scss/calendar-styles.scss */
+/* line 48, ../scss/calendar-styles.scss */
 .calendar-calendar div.date-heading h3 {
   font-size: 2.5em;
   color: black;
 }
 
-/* line 46, ../scss/calendar-styles.scss */
+/* line 52, ../scss/calendar-styles.scss */
 .calendar-calendar table th.days {
   font-size: 1.1em;
   height: 3.4em;
   border-bottom: 10px solid white;
 }
 
-/* line 51, ../scss/calendar-styles.scss */
+/* line 57, ../scss/calendar-styles.scss */
 .calendar-calendar table td {
   border-color: white;
 }
 
-/* line 54, ../scss/calendar-styles.scss */
+/* line 60, ../scss/calendar-styles.scss */
 .calendar-calendar table td div.inner {
   min-height: 9em;
 }
 
-/* line 57, ../scss/calendar-styles.scss */
+/* line 63, ../scss/calendar-styles.scss */
 .calendar-calendar td.empty {
   border-color: white;
 }
 
-/* line 60, ../scss/calendar-styles.scss */
+/* line 66, ../scss/calendar-styles.scss */
 .calendar-calendar td div.calendar-empty {
   line-height: 0;
 }
 
-/* line 63, ../scss/calendar-styles.scss */
+/* line 69, ../scss/calendar-styles.scss */
 .calendar-calendar td .inner div.month.day {
   float: left;
   width: auto;
@@ -88,7 +96,7 @@
   background-color: transparent;
 }
 
-/* line 70, ../scss/calendar-styles.scss */
+/* line 76, ../scss/calendar-styles.scss */
 .calendar-calendar td .inner div.month.day a {
   font-size: 18px;
   font-family: "Arial", sans-serif;
@@ -96,9 +104,18 @@
   background-color: transparent;
 }
 
-/* line 78, ../scss/calendar-styles.scss */
+/* line 84, ../scss/calendar-styles.scss */
 .calendar-calendar tr td.today .inner .month.day a,
 .calendar-calendar tr.odd td.today .inner .month.day a,
 .calendar-calendar tr.even td.today .inner .month.day a {
   color: white;
+}
+
+/* line 88, ../scss/calendar-styles.scss */
+#calpopup-body {
+  margin: 1em;
+  max-height: 10em;
+  overflow-y: auto;
+  position: relative;
+  font-size: 0.875em;
 }

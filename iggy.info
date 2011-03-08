@@ -20,7 +20,7 @@ stylesheets[all][]   = css/views-styles.css
 stylesheets[all][]   = css/nodes.css
 stylesheets[all][]   = css/forms.css
 stylesheets[print][] = css/print.css
-scripts[] = js/sitewide-message.js
+
 
 conditional-stylesheets[if IE][all][]       = css/ie.css
 conditional-stylesheets[if lte IE 6][all][] = css/ie6.css
