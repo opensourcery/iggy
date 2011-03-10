@@ -30,15 +30,16 @@
       line-height: 28px;
       text-align: center;
       text-decoration: none;
+      padding: 0px 10px;
       border: 4px solid #d2d2d2;
       -moz-border-radius: 3px 3px 3px 3px;
-      background-color: #ECE7E2;
+      background: #ECE7E2;
     }
   }
-  div.date-prev span a:link {
+  div.date-prev span {
     float: left;
   }
-  div.date-prev span a:link {
+  div.date-next span {
     float: right;
   }
 }
@@ -85,10 +86,59 @@
         color: white;
       }
 
+#calpopup {
+  border: 4px solid;
+}
+
 #calpopup-body {
   margin: 1em;
   max-height: 10em;
   overflow-y: auto;
   position: relative;
-  font-size: 0.875em; 
+  font-size: 0.75em;
+  clear: right; 
+   .content {
+     margin: 5px 0;
+   }
+   ul.links li a:link {
+     -moz-border-radius: 3px 3px 3px 3px;
+     border: 4px solid #D2D2D2;
+     display: block;
+     font-size: 1em;
+     font-weight: bold;
+     line-height: 28px;
+     text-decoration: none;
+     color: #FFF;
+     text-align: center;
+     width: 150px;
+   }
+   .volunteer-shifts-remaining-capacity {
+     float: right;
+     display: block;
+     padding: 5px;
+     width: 110px;
+     text-align: center;
+     position: relative;
+     right: 10px;
+     top: -65px;
+       span.remaining-capacity {
+         font-size: 4.5em;
+       }
+   }
 }
+
+#popup-close {
+  float: right;
+  padding: 4px 8px 1px;
+  position: relative;
+  right: 5px;
+  text-align: center;
+  top: -27px;
+    img#popup-close-img {
+      background: #FFF; 
+      border: 1px solid #e0e0e0;
+    }
+}
+
+
+

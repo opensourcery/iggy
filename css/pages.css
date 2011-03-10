@@ -228,6 +228,12 @@ ul.links li {
 /*
  * Footer
  */
+/* line 262, ../scss/pages.scss */
+#footer-message {
+  text-align: center;
+  color: #a2a2a2;
+}
+
 /*
  * Closure
  */
@@ -240,7 +246,7 @@ ul.links li {
 /*
  * Markup free clearing (See: http://www.positioniseverything.net/easyclearing.html )
  */
-/* line 293, ../scss/pages.scss */
+/* line 294, ../scss/pages.scss */
 .clearfix:after {
   content: ".";
   display: block;
@@ -257,7 +263,7 @@ ul.links li {
  * from a user. The effect of this class can be toggled with the jQuery show()
  * and hide() functions.
  */
-/* line 309, ../scss/pages.scss */
+/* line 310, ../scss/pages.scss */
 .element-hidden {
   display: none;
 }
@@ -272,7 +278,7 @@ ul.links li {
  * causes issues for keyboard only or voice recognition users. "!important" is
  * used to prevent unintentional overrides.
  */
-/* line 323, ../scss/pages.scss */
+/* line 324, ../scss/pages.scss */
 .element-invisible {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);

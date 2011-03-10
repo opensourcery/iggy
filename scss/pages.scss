@@ -259,8 +259,9 @@ ul.links li {
 #footer .section {
 }
 
-#footer-message /* Wrapper for the footer message from Drupal's "Site information"
-                   and for any blocks placed in the footer region */ {
+#footer-message /* Wrapper for the footer message from Drupal's "Site information" and for any blocks placed in the footer region */ {
+  text-align: center;
+  color: #a2a2a2;
 }
 
 .region-footer {

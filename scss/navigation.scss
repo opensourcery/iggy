@@ -19,7 +19,6 @@ li a.active {
  */
 #navigation {
   ul {
-    background: #d2d2d2; /* THIS SHOULD BE REMOVED */
     border-top: $navigation_indicator_height solid $color_body;
   }
 
@@ -65,14 +64,37 @@ li a.active {
 }
 
 #secondary-menu {
-
+  background: #d2d2d2;
+  -moz-border-radius: 3px 3px 3px 3px;
+  border: 4px solid #FFF;
+  display: block;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 28px;
+  text-decoration: none;
+  color: #FFF;
+    li {
+      float: left;
+       a:link,
+       a:visited {
+        color: #000; /* Should probably be tied to the a variable */
+        text-decoration: none;
+        line-height: 25px;
+        font-weight: bold;
+        display: block; 
+      }
+    }
+    li:hover,
+    li:active {  
+      background: #FFF;
+    }
 }
 
 /* 
  * Header Secondary Menu  
  */
 #user-tools-wrapper {
-  background: #000;
+  background: $color_body;
   text-align: center;
   display: block;
   height: 45px;
@@ -88,7 +110,6 @@ li a.active {
   float: right;
   display: block;
   ul {
-    background: #d2d2d2; /* THIS SHOULD BE REMOVED */
     border-top: $navigation_indicator_height solid $color_navigation_indicator;
     list-style: none;
     padding: 0;
