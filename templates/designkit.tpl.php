@@ -10,7 +10,7 @@ a:visited {
 }
 
 #user-tools-wrapper {
-  background-color: <?php print $primary; ?>;
+  background-color: <?php print designkit_colorshift($primary, '#000000', .15) ?>;
 }
 
 #block-views-my_shift_signups-block_1 h2.title {
@@ -55,16 +55,40 @@ div#calpopup {
   background: <?php print $primary; ?>;
 }
 
-span.remaining-capacity {
-  color: <?php print designkit_colorshift($primary, '#FFFFF', .85) ?>;
+.calendar-calendar span.remaining-capacity {
+  color: <?php print $primary; ?>; 
 }
 
+span.remaining-capacity {
+  color: <?php print designkit_colorshift($primary, '#FFFFFF', .85) ?>;
+}
+
+#block-boxes-volunteer_shifts_welcome_message h2.title,
 #block-views-my_shift_signups-block_1 h2.title {
-  color: <?php print (designkit_colorhsl($primary, 'l') > .5) ? '#fff' : '#000' ?>;
+  background-color: <?php print designkit_colorshift($primary, '#000000', .5) ?>;
 }
 
 .item-list ul li .views-field-edit-node a:link {
   background: <?php print $primary; ?>;
 }
 
+#user-toolbar #block-menu-secondary-links a {
+  border-top: 5px solid <?php print designkit_colorshift($primary, '#FFFFFF', .5) ?>;
+}
+
+#user-toolbar #block-menu-secondary-links a:focus,
+#user-toolbar #block-menu-secondary-links a:hover {
+  border-top: 5px solid <?php print designkit_colorshift($primary, '#000000', .5) ?>;
+}
+
+#user-toolbar #block-menu-secondary-links ul {
+  border-top: 5px solid <?php print designkit_colorshift($primary, '#000000', .5) ?>;
+}
+
+#user-toolbar #block-menu-secondary-links li {
+  border-right: 1px solid <?php print designkit_colorshift($primary, '#000000', .5) ?>;
+}
+
 </style>
+
+

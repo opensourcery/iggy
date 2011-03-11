@@ -64,3 +64,30 @@ function iggy_preprocess_page(&$vars) {
     $vars['title'] = FALSE;
   }
 }
+
+
+/**
+ * Breadcrumb styling
+ */
+function iggy_breadcrumb($breadcrumb) {
+  if (empty($breadcrumb)) {
+    return $themed_breadcrumb = '<div id="breadcrumb"></div>';
+  }
+  else  {
+    $themed_breadcrumb = '<div id="breadcrumb">';
+    $array_size = count($breadcrumb);
+    $i = 0;
+    while ( $i < $array_size) {
+      $themed_breadcrumb .= '<span class="breadcrumb-';
+      $themed_breadcrumb .= $i;
+      $themed_breadcrumb .=  '">' . $breadcrumb[$i] . '</span>';
+      if ( $i + 1 != $array_size ) {
+        $themed_breadcrumb .=  ' ';
+      }
+      $i++;
+    }
+    $themed_breadcrumb .= '</div>';
+    return $themed_breadcrumb;
+  }
+}
+

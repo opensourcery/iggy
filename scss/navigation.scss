@@ -65,28 +65,23 @@ li a.active {
 
 #secondary-menu {
   background: #d2d2d2;
+  padding: 0 2px;
   -moz-border-radius: 3px 3px 3px 3px;
   border: 4px solid #FFF;
-  display: block;
   font-size: 1em;
-  font-weight: bold;
-  line-height: 28px;
-  text-decoration: none;
-  color: #FFF;
     li {
-      float: left;
-       a:link,
-       a:visited {
+      a:link,
+      a:visited {
         color: #000; /* Should probably be tied to the a variable */
         text-decoration: none;
-        line-height: 25px;
+        line-height: 28px;
         font-weight: bold;
-        display: block; 
+        text-decoration: bold;        
       }
     }
     li:hover,
-    li:active {  
-      background: #FFF;
+    li:focus {
+      background: #a2a2a2;  
     }
 }
 
