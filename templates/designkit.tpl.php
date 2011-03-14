@@ -17,6 +17,19 @@ a:visited {
   background-color: <?php print $primary; ?>;
 }
 
+#block-boxes-volunteer_shifts_welcome_message .item-list ul li .views-field-edit-node a:link,
+#block-views-my_shift_signups-block_1 .item-list ul li .views-field-edit-node a:link {
+  border: 1px solid <?php print designkit_colorshift($primary, '#000000', .5) ?>;
+}
+
+#block-views-my_shift_signups-block_1 .item-list ul li .views-field-edit-node a:link {
+  color: <?php print (designkit_colorhsl($primary, 'l') > .5) ? '#fff' : '#000' ?>;
+}
+
+#block-views-my_shift_signups-block_1 .item-list ul li .views-field-delete-node a:link {
+  color: <?php print (designkit_colorhsl($primary, 'l') > .5) ? '#fff' : '#000' ?>;
+}
+
 .calendar-calendar td.empty {
   background-color: #E1E1E1;
 }

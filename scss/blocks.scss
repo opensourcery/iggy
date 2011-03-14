@@ -112,7 +112,7 @@
     line-height: 30px;
     padding: 0 5px;
   }
-  
+   
   .item-list ul, .item-list ul li {
     list-style: none;
     padding: 0;
@@ -121,62 +121,50 @@
 
   .item-list ul li .views-field-field-shift-date-value {
     font-size: 1.125em;
+    margin: 8px 0;
+    padding: 0 0 0 5px;
   } 
 
   .item-list ul li .views-field-edit-node,
   .item-list ul li .views-field-delete-node { 
     float: left;
   }
-
-  .item-list ul li .views-field-edit-node { 
-    a:link {
-      margin: 0 3px 0 0px;
-      -moz-border-radius: 6px 6px 6px 6px;
-      border: 4px solid #D2D2D2;
-      color: #FFFFFF;
-      display: block;
-      font-size: 1em;
-      font-weight: bold;
-      line-height: 28px;
-      text-align: center;
-      text-decoration: none;
-      padding: 0 10px;
-      text-shadow: 0 1px 0 #333;
-    }
+  
+  .item-list ul li .views-field-edit-node a:link,
+  .item-list ul li .views-field-delete-node a:link {
+    margin: 0 3px 0 0px;
+    padding: 0 10px;
+    text-align: center;
+    display: block;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 28px;
+    text-decoration: none;
+    -moz-border-radius: 6px 6px 6px 6px;
+    -moz-box-shadow: 0 0 5px #888;
+    -webkit-box-shadow: 0 0 5px#888;
+    box-shadow: 0 0 5px #888;
   }
-  .item-list ul li .views-field-delete-node {
-     a:link {
-       margin: 0 3px 0 0px;
-       text-shadow: 0 1px 0 #333;
-       -moz-border-radius: 6px 6px 6px 6px;
-       border: 4px solid #D2D2D2;
-       color: #FFFFFF;
-       display: block;
-       font-size: 1em;
-       font-weight: bold;
-       line-height: 28px;
-       text-align: center;
-       text-decoration: none;
-       padding: 0 10px;
-       background: #b2b2b2;
-     }
+  
+  .item-list ul li .views-field-delete-node a:link {
+    background: #e0e0e0;
+    border: 1px solid #a2a2a2;   
   }
+ 
   .more-link {
     background: none repeat scroll 0 0 #FFFFFF;
     float: right;
     padding: 5px;
     position: relative;
     text-align: center;
-    top: 36px;
+    top: 35px;
     width: 100px;
   }
 }
 
-#block-boxes-volunteer_shifts_welcome_message h2.title,
 #block-views-my_shift_signups-block_1 h2.title {
   padding: 0 0 0 30px;
   background: transparent url('../images/clock-icon.png') 4px 4px no-repeat;
   margin: 0 0 10px 0;
-  color: #FFF;
 }
 
