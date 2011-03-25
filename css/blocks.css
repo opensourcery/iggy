@@ -32,8 +32,10 @@
   background: #777;
   line-height: 30px;
   padding: 0 5px;
+  font-weight: normal;
+  color: white;
 }
-/* line 116, ../scss/blocks.scss */
+/* line 119, ../scss/blocks.scss */
 #block-boxes-volunteer_shifts_welcome_message .item-list ul, #block-boxes-volunteer_shifts_welcome_message .item-list ul li,
 #block-views-my_shift_signups-block_1 .item-list ul,
 #block-views-my_shift_signups-block_1 .item-list ul li {
@@ -41,21 +43,21 @@
   padding: 0;
   margin: 5px 0;
 }
-/* line 122, ../scss/blocks.scss */
+/* line 125, ../scss/blocks.scss */
 #block-boxes-volunteer_shifts_welcome_message .item-list ul li .views-field-field-shift-date-value,
 #block-views-my_shift_signups-block_1 .item-list ul li .views-field-field-shift-date-value {
   font-size: 1.125em;
   margin: 8px 0;
   padding: 0 0 0 5px;
 }
-/* line 129, ../scss/blocks.scss */
+/* line 132, ../scss/blocks.scss */
 #block-boxes-volunteer_shifts_welcome_message .item-list ul li .views-field-edit-node,
 #block-boxes-volunteer_shifts_welcome_message .item-list ul li .views-field-delete-node,
 #block-views-my_shift_signups-block_1 .item-list ul li .views-field-edit-node,
 #block-views-my_shift_signups-block_1 .item-list ul li .views-field-delete-node {
   float: left;
 }
-/* line 134, ../scss/blocks.scss */
+/* line 137, ../scss/blocks.scss */
 #block-boxes-volunteer_shifts_welcome_message .item-list ul li .views-field-edit-node a:link,
 #block-boxes-volunteer_shifts_welcome_message .item-list ul li .views-field-delete-node a:link,
 #block-views-my_shift_signups-block_1 .item-list ul li .views-field-edit-node a:link,
@@ -73,13 +75,13 @@
   -webkit-box-shadow: 0 0 5px#888;
   box-shadow: 0 0 5px #888;
 }
-/* line 149, ../scss/blocks.scss */
+/* line 152, ../scss/blocks.scss */
 #block-boxes-volunteer_shifts_welcome_message .item-list ul li .views-field-delete-node a:link,
 #block-views-my_shift_signups-block_1 .item-list ul li .views-field-delete-node a:link {
   background: #e0e0e0;
   border: 1px solid #a2a2a2;
 }
-/* line 154, ../scss/blocks.scss */
+/* line 157, ../scss/blocks.scss */
 #block-boxes-volunteer_shifts_welcome_message .more-link,
 #block-views-my_shift_signups-block_1 .more-link {
   background: none repeat scroll 0 0 #FFFFFF;
@@ -91,7 +93,7 @@
   width: 100px;
 }
 
-/* line 165, ../scss/blocks.scss */
+/* line 168, ../scss/blocks.scss */
 #block-views-my_shift_signups-block_1 h2.title {
   padding: 0 0 0 30px;
   background: transparent url("../images/clock-icon.png") 4px 4px no-repeat;
