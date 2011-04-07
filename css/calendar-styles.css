@@ -5,10 +5,13 @@
 /*****************************************************************************
  ************************* Calendar Stylings *********************************
  ****************************************************************************/
-/* temporarily hide these links until we decide what to do with them*/
 /* line 10, ../scss/calendar-styles.scss */
 .calendar-calendar > ul.links {
-  display: none;
+  display: table;
+  border-radius: 3px;
+  border: 1px #AFAFAF solid;
+  background-color: #EFEFEF;
+  padding: 3px;
 }
 
 /* line 13, ../scss/calendar-styles.scss */
