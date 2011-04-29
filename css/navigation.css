@@ -44,10 +44,16 @@ li a.active {
   text-decoration: none;
 }
 /* line 43, ../scss/navigation.scss */
+#navigation a:hover, #navigation a:focus {
+  border-top: 5px solid black;
+  background: #ededed;
+  color: #333;
+}
+/* line 48, ../scss/navigation.scss */
 #navigation li.active {
   background-color: #FFF;
 }
-/* line 45, ../scss/navigation.scss */
+/* line 50, ../scss/navigation.scss */
 #navigation li.active a {
   border-top: 5px solid black;
   color: #000;
@@ -56,6 +62,104 @@ li a.active {
 /*
  * Primary and Secondary menu links
  */
+/* line 66, ../scss/navigation.scss */
+#secondary-menu {
+  background: #d2d2d2;
+  padding: 0 2px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  border: 4px solid #FFF;
+  font-size: 1em;
+}
+/* line 74, ../scss/navigation.scss */
+#secondary-menu li a:link,
+#secondary-menu li a:visited {
+  color: #000;
+  /* Should probably be tied to the a variable */
+  text-decoration: none;
+  line-height: 28px;
+  font-weight: bold;
+  text-decoration: bold;
+}
+/* line 83, ../scss/navigation.scss */
+#secondary-menu li:hover,
+#secondary-menu li:focus {
+  background: #a2a2a2;
+}
+
+/* 
+ * Header Secondary Menu  
+ */
+/* line 91, ../scss/navigation.scss */
+#user-tools-wrapper {
+  background: #ededed;
+  text-align: center;
+  display: block;
+  height: 45px;
+  position: relative;
+  top: -16px;
+}
+
+/* line 100, ../scss/navigation.scss */
+#user-toolbar {
+  margin: auto;
+  width: 960px;
+}
+/* line 104, ../scss/navigation.scss */
+#user-toolbar #block-menu-secondary-links {
+  float: right;
+  display: block;
+}
+/* line 107, ../scss/navigation.scss */
+#user-toolbar #block-menu-secondary-links ul {
+  border-top: 5px solid black;
+  list-style: none;
+  padding: 0;
+}
+/* line 113, ../scss/navigation.scss */
+#user-toolbar #block-menu-secondary-links li {
+  border-right: 1px solid #000;
+  padding: 0;
+  float: left;
+  background: #ededed;
+}
+/* line 119, ../scss/navigation.scss */
+#user-toolbar #block-menu-secondary-links li.last, #user-toolbar #block-menu-secondary-links li.active {
+  border-right: none;
+}
+/* line 122, ../scss/navigation.scss */
+#user-toolbar #block-menu-secondary-links a {
+  border-top: 5px solid transparent;
+  color: #000;
+  display: block;
+  line-height: 24px;
+  margin-top: -5px;
+  padding: 0 12px;
+  font-size: 0.75em;
+  font-weight: bold;
+  text-decoration: none;
+}
+/* line 133, ../scss/navigation.scss */
+#user-toolbar #block-menu-secondary-links a:hover, #user-toolbar #block-menu-secondary-links a:focus {
+  border-top: 5px solid #888888;
+  color: #333;
+}
+/* line 137, ../scss/navigation.scss */
+#user-toolbar #block-menu-secondary-links li.active {
+  background-color: #FFF;
+}
+/* line 139, ../scss/navigation.scss */
+#user-toolbar #block-menu-secondary-links li.active a {
+  border-top: 5px solid black;
+  color: #000;
+}
+/* line 145, ../scss/navigation.scss */
+#user-toolbar #block-menu-secondary-links h2.title {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
 /*
  * Menu blocks
  */

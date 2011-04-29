@@ -73,6 +73,9 @@ body {
 }
 
 #name-and-slogan /* Wrapper for website name and slogan */ {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
 }
 
 h1#site-name,
@@ -126,14 +129,49 @@ div#site-name /* The name of the website */ {
 .region-content-top /* Wrapper for any blocks placed in the "content top" region */ {
 }
 
-.breadcrumb /* The path to the current page in the form of a list of links */ {
-  padding-bottom: 0; /* Undo system.css */
+/* 
+ * Breadcrumb styling
+ */
+
+#breadcrumb span {
+  background: #e0e0e0;
+  float: left;
 }
+
+#breadcrumb span a {
+  background: transparent url('../images/breadcrumb-cap.png') top right no-repeat;
+  display: block;
+  line-height: 30px;
+  padding: 0 25px 0 28px;
+}
+
+#breadcrumb span a:link,
+#breadcrumb span a:visited {
+  color: #787878;
+  text-decoration: none;
+}
+
+#breadcrumb span.breadcrumb-0 a {
+  background: #e0e0e0 url('../images/breadcrumb-home.png') top left no-repeat;
+  width: 57px;
+  height: 30px;
+  padding: 0;
+  /* hide 'Home' text */
+  text-indent: -5000px;
+  white-space: nowrap;
+  outline: none;
+}
+
 
 h1.title, /* The title of the page */
 h2.title, /* Block title or the title of a piece of content when it is given in a list of content */
 h3.title /* Comment title */ {
   margin: 0;
+}
+
+h1.title {
+  clear: both;
+  margin: 10px 0 0 0;
 }
 
 tr.even /* Some tables have rows marked even or odd. */ {
@@ -264,8 +302,9 @@ ul.links li {
 #footer .section {
 }
 
-#footer-message /* Wrapper for the footer message from Drupal's "Site information"
-                   and for any blocks placed in the footer region */ {
+#footer-message /* Wrapper for the footer message from Drupal's "Site information" and for any blocks placed in the footer region */ {
+  text-align: center;
+  color: #a2a2a2;
 }
 
 .region-footer {

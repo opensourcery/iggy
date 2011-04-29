@@ -66,7 +66,15 @@ body {
   vertical-align: bottom;
 }
 
-/* line 79, ../scss/pages.scss */
+/* line 75, ../scss/pages.scss */
+#name-and-slogan {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* line 82, ../scss/pages.scss */
 h1#site-name,
 div#site-name {
   margin: 0;
@@ -74,14 +82,14 @@ div#site-name {
   line-height: 1.3em;
 }
 
-/* line 86, ../scss/pages.scss */
+/* line 89, ../scss/pages.scss */
 #site-name a:link,
 #site-name a:visited {
   color: #000;
   text-decoration: none;
 }
 
-/* line 92, ../scss/pages.scss */
+/* line 95, ../scss/pages.scss */
 #site-name a:hover,
 #site-name a:focus {
   text-decoration: underline;
@@ -90,7 +98,7 @@ div#site-name {
 /*
  * Main (container for everything else)
  */
-/* line 108, ../scss/pages.scss */
+/* line 111, ../scss/pages.scss */
 #main {
   background: #FFFFFF;
   clear: both;
@@ -99,67 +107,103 @@ div#site-name {
 /*
  * Content
  */
-/* line 119, ../scss/pages.scss */
+/* line 122, ../scss/pages.scss */
 #content .section {
   padding: 30px;
 }
 
-/* line 129, ../scss/pages.scss */
-.breadcrumb {
-  padding-bottom: 0;
-  /* Undo system.css */
+/* 
+ * Breadcrumb styling
+ */
+/* line 136, ../scss/pages.scss */
+#breadcrumb span {
+  background: #e0e0e0;
+  float: left;
 }
 
-/* line 135, ../scss/pages.scss */
+/* line 141, ../scss/pages.scss */
+#breadcrumb span a {
+  background: transparent url("../images/breadcrumb-cap.png") top right no-repeat;
+  display: block;
+  line-height: 30px;
+  padding: 0 25px 0 28px;
+}
+
+/* line 149, ../scss/pages.scss */
+#breadcrumb span a:link,
+#breadcrumb span a:visited {
+  color: #787878;
+  text-decoration: none;
+}
+
+/* line 154, ../scss/pages.scss */
+#breadcrumb span.breadcrumb-0 a {
+  background: #e0e0e0 url("../images/breadcrumb-home.png") top left no-repeat;
+  width: 57px;
+  height: 30px;
+  padding: 0;
+  /* hide 'Home' text */
+  text-indent: -5000px;
+  white-space: nowrap;
+  outline: none;
+}
+
+/* line 168, ../scss/pages.scss */
 h1.title,
 h2.title,
 h3.title {
   margin: 0;
 }
 
-/* line 139, ../scss/pages.scss */
+/* line 172, ../scss/pages.scss */
+h1.title {
+  clear: both;
+  margin: 10px 0 0 0;
+}
+
+/* line 177, ../scss/pages.scss */
 tr.even {
   /* background-color: #eee; */
   /* Drupal core uses a #eee background */
 }
 
-/* line 143, ../scss/pages.scss */
+/* line 181, ../scss/pages.scss */
 tr.odd {
   /* background-color: #eee; */
   /* Drupal core uses a #eee background */
 }
 
-/* line 154, ../scss/pages.scss */
+/* line 192, ../scss/pages.scss */
 div.warning,
 tr.warning {
   /* border: 1px solid #f0c020; */
   /* Drupal core uses: 1px solid #f0c020 */
 }
 
-/* line 162, ../scss/pages.scss */
+/* line 200, ../scss/pages.scss */
 .error {
   /* color: #e55; */
   /* Drupal core uses a #e55 background */
 }
 
-/* line 166, ../scss/pages.scss */
+/* line 204, ../scss/pages.scss */
 .warning {
   /* color: #e09010; */
   /* Drupal core uses a #e09010 background */
 }
 
-/* line 173, ../scss/pages.scss */
+/* line 211, ../scss/pages.scss */
 .help {
   margin: 1em 0;
 }
 
-/* line 177, ../scss/pages.scss */
+/* line 215, ../scss/pages.scss */
 .more-help-link {
   font-size: 0.85em;
   text-align: right;
 }
 
-/* line 187, ../scss/pages.scss */
+/* line 225, ../scss/pages.scss */
 .region-header ul.menu,
 .region-page-closure ul.menu,
 ul.links {
@@ -167,13 +211,13 @@ ul.links {
   padding: 0;
 }
 
-/* line 192, ../scss/pages.scss */
+/* line 230, ../scss/pages.scss */
 ul.links.inline {
   margin: 0;
   display: inline;
 }
 
-/* line 199, ../scss/pages.scss */
+/* line 237, ../scss/pages.scss */
 .region-header ul.menu li,
 .region-page-closure ul.menu li,
 ul.links li {
@@ -182,25 +226,25 @@ ul.links li {
   padding: 0 0.5em;
 }
 
-/* line 205, ../scss/pages.scss */
+/* line 243, ../scss/pages.scss */
 .pager {
   clear: both;
   margin: 1em 0;
   text-align: center;
 }
 
-/* line 212, ../scss/pages.scss */
+/* line 250, ../scss/pages.scss */
 .pager a,
 .pager strong.pager-current {
   padding: 0.5em;
 }
 
-/* line 216, ../scss/pages.scss */
+/* line 254, ../scss/pages.scss */
 .feed-icons {
   margin: 1em 0;
 }
 
-/* line 220, ../scss/pages.scss */
+/* line 258, ../scss/pages.scss */
 .more-link {
   text-align: right;
   /* LTR */
@@ -221,7 +265,7 @@ ul.links li {
 /*
  * Front Page Calendar
  */
-/* line 254, ../scss/pages.scss */
+/* line 292, ../scss/pages.scss */
 .calendar-calendar .month-view table {
   clear: both;
 }
@@ -229,6 +273,12 @@ ul.links li {
 /*
  * Footer
  */
+/* line 305, ../scss/pages.scss */
+#footer-message {
+  text-align: center;
+  color: #a2a2a2;
+}
+
 /*
  * Closure
  */
@@ -241,7 +291,7 @@ ul.links li {
 /*
  * Markup free clearing (See: http://www.positioniseverything.net/easyclearing.html )
  */
-/* line 298, ../scss/pages.scss */
+/* line 337, ../scss/pages.scss */
 .clearfix:after {
   content: ".";
   display: block;
@@ -258,7 +308,7 @@ ul.links li {
  * from a user. The effect of this class can be toggled with the jQuery show()
  * and hide() functions.
  */
-/* line 314, ../scss/pages.scss */
+/* line 353, ../scss/pages.scss */
 .element-hidden {
   display: none;
 }
@@ -273,7 +323,7 @@ ul.links li {
  * causes issues for keyboard only or voice recognition users. "!important" is
  * used to prevent unintentional overrides.
  */
-/* line 328, ../scss/pages.scss */
+/* line 367, ../scss/pages.scss */
 .element-invisible {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
