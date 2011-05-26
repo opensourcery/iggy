@@ -110,6 +110,7 @@ div#site-name /* The name of the website */ {
 
 #main {
   background: #FFFFFF;
+	clear: both; 
 }
 
 /*
@@ -283,6 +284,13 @@ ul.links li {
 }
 
 .region-sidebar-second .section {
+}
+
+/*
+ * Front Page Calendar
+ */
+.calendar-calendar .month-view table {
+	clear: both;
 }
 
 /*
