@@ -269,6 +269,7 @@ dd {
 table {
   border-collapse: collapse;
   width: 100%;
+  background-color: #E0E0E0
   /* Prevent cramped-looking tables */
 }
 
@@ -334,4 +335,10 @@ form {
 fieldset {
   margin: 1em 0;
   padding: 0.5em;
+}
+
+td {
+border: 1px solid #787878;
+padding: 5px;
+color: #444;
 }
