@@ -6,8 +6,9 @@
 
 a:link,
 a:visited {
-  color: <?php print $primary; ?>;
+  color: <?php print designkit_colorshift($primary, '#000000', .2) ?>;
 }
+
 
 #user-tools-wrapper {
   background-color: <?php print designkit_colorshift($primary, '#000000', .15) ?>;
