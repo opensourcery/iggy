@@ -91,3 +91,19 @@ function iggy_breadcrumb($breadcrumb) {
   }
 }
 
+function iggy_preprocess_designkit(&$vars) {
+  $settings = theme_get_settings('iggy');
+  if (!empty($settings['background_path'])) {
+    $path = $settings['background_path'];
+  }
+  elseif (!empty($settings['background_file'])) {
+    $path = $settings['backgrond_file'];
+  }
+  // @TODO: add default image?
+  if ($path) {
+    $vars['background_image'] = $path;
+  }
+  if ($settings['background_repeat']) {
+    $vars['background_repeat'] = $settings['background_repeat'];
+  }
+}

@@ -1,4 +1,15 @@
 <style type="text/css">
+body {
+  <?php if ($background_image): ?>
+  background-image: url("<?php print $background_image; ?>");
+  <?php endif; ?>
+  <?php if ($background_repeat): ?>
+  background-repeat: <?php print $background_repeat; ?>;
+  <?php endif; ?>
+  <?php if ($background): ?>
+  background-color: <?php print $background; ?>;
+  <?php endif; ?>
+}
 
 #navigation {
   background-color: <?php print $primary; ?>;

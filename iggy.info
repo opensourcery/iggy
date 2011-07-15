@@ -51,6 +51,10 @@ designkit[color][primary][title] = "Primary"
 designkit[color][primary][description] = "Primary theme color, used for headers, and other fills."
 designkit[color][primary][default] = "#38393A"
 
+designkit[color][background][title] = "Background"
+designkit[color][background][description] = "Background color, used for the site's background (behind the background image, if specified).
+designkit[color][background][default] = "#ededed"
+
 settings[zen_block_editing]        = 0
 settings[zen_breadcrumb]           = yes
 settings[zen_breadcrumb_separator] = ' › '
