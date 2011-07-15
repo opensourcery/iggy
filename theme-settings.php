@@ -57,14 +57,6 @@ function iggy_settings($saved_settings) {
     '#type' => 'value',
     '#value' => !empty($settings['background_path']) ? $settings['background_path'] : '',
   );
-  $form['custom']['background_color'] = array(
-    '#title' => t('Background color'),
-    '#type' => 'textfield',
-    '#size' => '7',
-    '#maxlength' => '7',
-    '#default_value' => !empty($settings['background_color']) ? $settings['background_color'] : '#888888',
-    '#suffix' => '<div id="singular-colorpicker"></div>',
-  );
   $form['custom']['background_repeat'] = array(
     '#title' => t('Tile'),
     '#type' => 'select',
