@@ -40,7 +40,7 @@
  */
 /* line 46, ../scss/layout-fixed.scss */
 #header {
-  height: 136px;
+  min-height: 136px;
 }
 
 /* line 50, ../scss/layout-fixed.scss */

@@ -44,7 +44,7 @@ body {
  * Header
  */
 #header {
-  height: $header_height;
+  min-height: $header_height;
 }
 
 #header .section {
