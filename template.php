@@ -95,7 +95,7 @@ function iggy_preprocess_designkit(&$vars) {
   $settings = theme_get_settings('iggy');
   $vars['background_image'] = $vars['background_repeat'] = $vars['background'] = $path = FALSE;
   if (!empty($settings['background_path'])) {
-    $path = $settings['background_path'];
+    $path = '/' . $settings['background_path'];
   }
   elseif (!empty($settings['background_file'])) {
     $path = $settings['backgrond_file'];

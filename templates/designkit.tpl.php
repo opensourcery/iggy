@@ -71,16 +71,19 @@ div#calpopup {
 }
 
 
-#calpopup-body ul.links li a:link {
+#calpopup-body ul.links li a:link,
+#calpopup-body ul.links li a:visited {
   background: <?php print $primary; ?>;
+  color: <?php print designkit_colorshift($primary, '#FFFFFF', .85) ?>
 }
 
 .volunteer-shifts-remaining-capacity {
   background: <?php print $primary; ?>;
+  color: <?php print designkit_colorshift($primary, '#FFFFFF', .85) ?>;
 }
 
 .calendar-calendar span.remaining-capacity {
-  color: <?php print $primary; ?>; 
+  color: <?php print $primary; ?>;
 }
 
 span.remaining-capacity {
@@ -90,10 +93,16 @@ span.remaining-capacity {
 #block-boxes-volunteer_shifts_welcome_message h2.title,
 #block-views-my_shift_signups-block_1 h2.title {
   background-color: <?php print designkit_colorshift($primary, '#000000', .5) ?>;
+  color: <?php print designkit_colorshift($primary, '#FFFFFF', .85) ?>;
 }
 
-.item-list ul li .views-field-edit-node a:link {
+#block-boxes-volunteer_shifts_welcome_message .more-link, #block-views-my_shift_signups-block_1 .more-link {
+  background: none repeat scroll 0 0 #FFFFFF;
+}
+.item-list ul li .views-field-edit-node a:link,
+.item-list ul li .views-field-edit-node a:visited {
   background: <?php print $primary; ?>;
+  color: <?php print designkit_colorshift($primary, '#FFFFFF', .85) ?>;
 }
 
 #user-toolbar #block-menu-secondary-links a {
